@@ -13,39 +13,126 @@
     />
   </head>
   <body>
-    <a href="index.html" class="btn btn-link" role="button"
-      >Google Clone Search</a
-    >
-    <a href="ImageSearch.html" class="btn btn-link" role="button"
-      >Image Search</a
-    >
+    <div class="container text-center">
+      <div class="row gx-0">
+        <div class="col-6"></div>
+        <div class="col">
+          <a href="index.html" class="btn btn-outline-dark btn-sm" role="button"
+            >Google Clone Search</a
+          >
+        </div>
+        <div class="col">
+          <a
+            href="ImageSearch.html"
+            class="btn btn-outline-dark btn-sm"
+            role="button"
+            >Image Search</a
+          >
+        </div>
+      </div>
+    </div>
 
     <form action="https://google.com/search" method="get" role="search">
-      <input
-        type="text"
-        name="as_q"
-        class="form-control form-control-lg"
-        placeholder="all these words..."
-      />
-      <input
-        type="text"
-        name="as_epq"
-        class="form-control form-control-lg"
-        placeholder="this exact word or phrase..."
-      />
-      <input
-        type="text"
-        name="as_oq"
-        class="form-control form-control-lg"
-        placeholder="any of these words..."
-      />
-      <input
-        type="text"
-        name="as_eq"
-        class="form-control form-control-lg"
-        placeholder="none of these words..."
-      />
-      <input type="submit" value="Google Clone Search" class="btn btn-light" />
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <label for="allTheseWordsForm" class="form-label"
+              >all these words:</label
+            >
+          </div>
+          <div class="col-6">
+            <input
+              type="text"
+              name="as_q"
+              class="form-control"
+              id="allTheseWordsForm"
+            />
+          </div>
+          <div class="col">
+            <label for="allTheseWordsForm" class="form-label"
+              >Type the important words: tri-colour rat terrier</label
+            >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="thisWordsForm" class="form-label"
+              >this exact word or phrase:</label
+            >
+          </div>
+          <div class="col-6">
+            <input
+              type="text"
+              name="as_epq"
+              class="form-control"
+              id="thisWordsForm"
+            />
+          </div>
+          <div class="col">
+            <label for="thisWordsForm" class="form-label"
+              >Put exact words in quotes: "rat terrier"</label
+            >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="anyWordsForm" class="form-label"
+              >any of these words:</label
+            >
+          </div>
+          <div class="col-6">
+            <input
+              type="text"
+              name="as_oq"
+              class="form-control"
+              id="anyWordsForm"
+            />
+          </div>
+          <div class="col">
+            <label for="anyWordsForm" class="form-label"
+              >Type OR between all the words you want: miniature OR
+              standard</label
+            >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="noneWordsForm" class="form-label"
+              >none of these words:</label
+            >
+          </div>
+          <div class="col-6">
+            <input
+              type="text"
+              name="as_eq"
+              class="form-control"
+              id="noneWordForm"
+            />
+          </div>
+          <div class="col">
+            <label for="anyWordsForm" class="form-label"
+              >Put a minus sign just before words that you don't want: -rodent,
+              -"Jack Russell"</label
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-8"></div>
+          <div class="col">
+            <input
+              type="submit"
+              value="Google Clone Search"
+              class="btn btn-primary"
+            />
+          </div>
+        </div>
+      </div>
     </form>
 
     <script
