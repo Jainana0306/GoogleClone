@@ -92,3 +92,11 @@ input{
 input[type = "text"]{
     border-radius: 20px;
 }
+input[type = "submit"]{
+    background-color: #F8F9FA;
+    border-radius: 10px;
+    border: none;
+    height: 36px;
+    padding: 0 20px;
+    margin: 0 4px;
+}
